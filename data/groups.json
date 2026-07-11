@@ -1,0 +1,29 @@
+{
+  "communityName": "ELIA",
+  "tagline": "WhatsApp Group Archive",
+  "note": "Conversation history compiled so members who joined later can see what was discussed.",
+  "groups": [
+    {
+      "slug": "members",
+      "emoji": "🌍",
+      "name": "ELIA Members Group",
+      "description": "Main community group for ELIA members",
+      "invite": "WHATSAPP_INVITE_LINK_HERE",
+      "main": true
+    },
+    {
+      "slug": "focus-pm-speakers",
+      "emoji": "🎤",
+      "name": "FOCUS PM 25 – Speakers",
+      "description": "Speaker coordination for FOCUS on Project Management 2025",
+      "invite": "WHATSAPP_INVITE_LINK_HERE"
+    },
+    {
+      "slug": "execs-2026",
+      "emoji": "🏢",
+      "name": "ELIA Execs 2026",
+      "description": "Executive group chat 2026",
+      "invite": "WHATSAPP_INVITE_LINK_HERE"
+    }
+  ]
+}
