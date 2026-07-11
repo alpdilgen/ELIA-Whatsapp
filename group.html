@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Group — ELIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <a class="backlink" href="index.html">← All groups</a>
+    <div class="gp">
+      <!-- Chat panel -->
+      <section class="chatcard">
+        <div class="chat-head">
+          <div class="chat-head__logo" id="ch-logo">💬</div>
+          <div>
+            <div class="chat-head__name" id="ch-name">Loading…</div>
+            <div class="chat-head__meta" id="ch-meta"></div>
+          </div>
+        </div>
+        <div class="chat-search">
+          <input id="search" type="search" placeholder="Search messages…" autocomplete="off" />
+          <span class="chat-search__count" id="search-count"></span>
+        </div>
+        <div class="chat-body" id="chat">
+          <div class="skeleton" style="text-align:center;padding:40px;">Loading conversation history…</div>
+        </div>
+      </section>
+
+      <!-- Side panel -->
+      <aside class="side">
+        <a class="join-btn" id="join" href="#" target="_blank" rel="noopener">
+          <svg class="wa-ico" viewBox="0 0 24 24"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.2h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14 0-.31-.01-.47-.01a.9.9 0 0 0-.65.31c-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.17 1.73 2.64 4.2 3.7.59.25 1.04.4 1.4.52.59.19 1.12.16 1.54.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+          Join Group
+        </a>
+
+        <div class="panel">
+          <h3>Group</h3>
+          <div class="side-stats">
+            <div class="stat"><div class="stat__top"><b id="s-members">—</b><small>members</small></div></div>
+            <div class="stat"><div class="stat__top"><b id="s-messages">—</b><small>messages</small></div></div>
+          </div>
+          <p class="card__desc" id="s-desc" style="margin-top:14px;"></p>
+        </div>
+
+        <div class="panel">
+          <h3>Top Contributors</h3>
+          <ul class="contrib" id="contrib"><li class="skeleton">—</li></ul>
+        </div>
+
+        <div class="panel" id="rules-panel">
+          <h3>Group Rules</h3>
+          <ol class="rules-list" id="rules-list"></ol>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      ELIA · Conversation histories are for archive purposes only.
+    </div>
+  </footer>
+
+  <script src="js/parser.js"></script>
+  <script src="js/logo.js"></script>
+  <script src="js/group.js"></script>
+</body>
+</html>
